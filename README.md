@@ -15,3 +15,20 @@ This project implements a complete computer vision pipeline tailored for bluepri
 ---
 
 ## 📁 Project Structure
+
+blueprint-cv-pipeline/
+
+api/ # FastAPI app for REST API
+ -> main.py
+
+src/ # Computer vision pipeline logic
+ -> preprocess.py # Load and preprocess input images
+ -> inference.py # Run object detection (YOLOv8)
+ -> postprocess.py # Parse and format detection outputs
+ -> pipeline.py # Command-line runner (CLI pipeline)
+
+data/ # Input images (temporary)
+outputs/ # Annotated results and JSON outputs
+requirements.txt # Python dependencies
+README.md # This file
+Dockerfile # Optional: containerization support
